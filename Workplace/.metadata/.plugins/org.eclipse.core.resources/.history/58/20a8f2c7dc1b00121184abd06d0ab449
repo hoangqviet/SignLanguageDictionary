@@ -1,0 +1,78 @@
+package edu.csun.aims2.cs;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
+import javax.swing.JToolBar;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import java.awt.FlowLayout;
+
+public class SignLanguageDictionary {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SignLanguageDictionary window = new SignLanguageDictionary();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public SignLanguageDictionary() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 800, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new BorderLayout(0, 0));
+		
+		JToolBar toolBar = new JToolBar();
+		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
+		
+		JPanel statusPanel = new JPanel();
+		statusPanel.setPreferredSize(new Dimension(10, 15));
+		frame.getContentPane().add(statusPanel, BorderLayout.SOUTH);
+		
+		JPanel leftPanel = new JPanel();
+		leftPanel.setRequestFocusEnabled(false);
+		leftPanel.setPreferredSize(new Dimension(150, 10));
+		frame.getContentPane().add(leftPanel, BorderLayout.WEST);
+		
+		JPanel mainPanel = new JPanel();
+		frame.getContentPane().add(mainPanel, BorderLayout.CENTER);
+		mainPanel.setLayout(new BorderLayout(0, 0));
+		
+		JPanel panel = new JPanel();
+		mainPanel.add(panel, BorderLayout.NORTH);
+		
+		JPanel panel_1 = new JPanel();
+		mainPanel.add(panel_1, BorderLayout.SOUTH);
+		
+		JPanel rightPanel = new JPanel();
+		rightPanel.setPreferredSize(new Dimension(150, 10));
+		frame.getContentPane().add(rightPanel, BorderLayout.EAST);
+	}
+
+}
