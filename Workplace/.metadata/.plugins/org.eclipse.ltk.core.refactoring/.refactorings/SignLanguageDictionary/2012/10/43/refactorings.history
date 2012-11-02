@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename method &apos;edu.csun.aims2.cs.SignLanguageDictionary.initialize()&apos; to &apos;initializeGUI&apos;&#x0D;&#x0A;- Original project: &apos;SignLanguageDictionary&apos;&#x0D;&#x0A;- Original element: &apos;edu.csun.aims2.cs.SignLanguageDictionary.initialize()&apos;&#x0D;&#x0A;- Renamed element: &apos;edu.csun.aims2.cs.SignLanguageDictionary.initializeGUI()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;initialize&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;edu.csun.aims2.cs{SignLanguageDictionary.java[SignLanguageDictionary~initialize" name="initializeGUI" references="true" stamp="1350865009572" version="1.0"/>
-</session>
